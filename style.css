@@ -1,94 +1,74 @@
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+.body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-html {
-    width: 1040px;
+.container {
+    max-width: 1440px;
     margin: 0 auto;
-    background-color: bisque;
 }
-nav {
-    height: 35px;
+nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
     background-color: gray;
-    text-align: center;
-    padding-top: 1px;
-
-}
-
-nav li  {
-    display: inline;
-    margin-left:  30px;
+    list-style: none;
 }
 nav li a {
+    padding: 0 20px;
+    line-height: 50px;
     color: aliceblue;
     text-decoration: none;
 } 
-h1 {
-    font-size: 42px;
-    font-weight: 700;
-    text-decoration: underline;
-    height: 50px;
-    width: 400px;
-}
-header {
-    background-color: burlywood;
-}
-.name {
+.title {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.naco {
-    margin-left: 80px;
-    width: 500px;
+.title h1 {
+    color: brown;
+    font-size: 4em;
 }
-.ava {
-    width: 250px;
-    height: 250px;
-    margin-left: 30px;
-    margin-top: 30px;
-
-    
+.avatar {
+    width: 200px;
+    height: 200px;
+    margin-left: 150px;
 }
-.ava img {
-    height: 100%;
+.avatar img {
     width: 100%;
+    border-radius: 100%;
+} 
+.line {
+    margin: 10px 0;
+    height: 3px;
+    background-color: grey;
 }
-.contact {
-    height: 180px;
-    width: 500px;
+.text {
+    padding-left: 10px;
 }
-.contact li {
-    padding: 10px;
+.text h2 {
+    color: darkgreen;
 }
-.band {
-    background-color: gray;
-}
-.bg-color {
-    background-color: burlywood;
-}
-h2 {
-    margin-left: 50px;
-    color: aliceblue;
-}
-p {
-    margin-left: 70px;
-}
-.project a {
-    margin-left: 70px;
-    text-decoration: none;
-}
-footer {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
-    background-color: brown;
-
+    padding: 10px;
+    background-color: gray;
 }
-.git-link a {
-    color: aliceblue;
-}
-.year {
-    color: aliceblue;
-}
-img {
+.logo {
     width: 90px;
-    height: 33px;
-
+}
+.link a, .year {
+    text-decoration: none;
+    color: aliceblue;
 }
